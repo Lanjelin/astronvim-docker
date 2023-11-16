@@ -12,10 +12,11 @@ Built mainly with UnRaid in mind, but should work on other systems as well.
 It's an easy and efficient way of runnnig AstroNvim without having to install anything else but docker.  
 
 ## Installation
-To persist configuration between runs, it's adviced to bind the internal path /root to either a volume or folder on the host.  
+To persist configuration between runs, it's adviced to bind the internal path `/root` to either a volume or folder on the host.  
 
 ### First Run
 The container will install AstroNvim and oh-my-zsh on first run, and installing all packages used by AstroNvim.  
+It should be run as following before attempting anything else, to ensure configurations are properly populated.  
 
 ```bash
 docker run -it --rm -v /mnt/user/appdata/astronvim:/root ghcr.io/lanjelin/astronvim-docker:latest
@@ -143,9 +144,13 @@ services:
 ```
 
 ## Icons
-ttyd will not work without icons without rebuilding it from source.  
+ttyd will not work with icons without rebuilding it from source.  
 
 To disable icons `nvim /mnt/user/appdata/astronvim/.config/nvim/lua/user/options.lua` and set `icons_enabled` to `false`.  
 
 For a terminal that supports it, [Nerd Fonts](https://www.nerdfonts.com/font-downloads) can be used.  
 For other alternatives, see [AstroNvim Docs](https://docs.astronvim.com/Recipes/icons) on the matter.
+
+## Security
+The container is run with root user in order to be able to read/write files/folders it accesses.  
+This always includes some risks, and the container should not be exposed to the internet without taking the proper precautions.
