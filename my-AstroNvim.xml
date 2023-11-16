@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>AstroNvim</Name>
+  <Repository>ghcr.io/lanjelin/astronvim-docker:latest</Repository>
+  <Registry>https://github.com/lanjelin/astronvim-docker</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>AstroNvim is an aesthetic and feature-rich neovim config that is extensible and easy to use with a great set of plugins&#xD;
+&#xD;
+Run the following from the terminal before starting the container here, to allow it to set up all the configurations properly.&#xD;
+&#xD;
+docker run -it --rm -v /mnt/user/appdata/astronvim:/root ghcr.io/lanjelin/astronvim-docker:latest&#xD;
+&#xD;
+When everything stops moving, type  :q  and press Enter to leave the container. &#xD;
+It is now safe to start it from the UI&#xD;
+&#xD;
+Defaults to expose only nvim to the webui. To make is expose shell (zsh), change the Post Arguments to 'ttyd zsh'</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:7681]</WebUI>
+  <TemplateURL/>
+  <Icon>https://avatars.githubusercontent.com/u/102238249</Icon>
+  <ExtraParams/>
+  <PostArgs>ttyd nvim "/edit"</PostArgs>
+  <CPUset/>
+  <DateInstalled>1700118731</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Run a command in the terminal before starting the container from the GUI, in order for configurations to be set up properly.&#xD;
+&#xD;
+docker run -it --rm -v /mnt/user/appdata/astronvim:/root ghcr.io/lanjelin/astronvim-docker:latest</Requires>
+  <Config Name="WEB UI" Target="7681" Default="7681" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">7681</Config>
+  <Config Name="Config" Target="/root" Default="/mnt/user/appdata/astronvim" Mode="rw" Description="Persist configuration between runs" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/astronvim</Config>
+  <Config Name="Files" Target="/edit" Default="" Mode="rw" Description="Path to files/project to mount inside the container" Type="Path" Display="always" Required="false" Mask="false"/>
+</Container>
