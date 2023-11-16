@@ -18,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
          
-       - name: Install Docker
+      - name: Install Docker
         id: dock
         run: curl -fsSL https://get.docker.com | sh
         
