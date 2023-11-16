@@ -82,7 +82,7 @@ TTYD is run with default settings, and the WEB-UI should be available at http://
 
 ### UnRaid
 I've inlcuded a template to make it a fast process setting this up in UnRaid.  
-Simply run the following to download the template, the navigate to your Docker-tab, click Add Container, and find AstroNvim in the Template-dropdown.
+Simply run the following to download the template, then navigate to your Docker-tab, click Add Container, and find AstroNvim in the Template-dropdown.
 
 ```bash
 wget -O /boot/config/plugins/dockerMan/templates-user/my-AstroNvim.xml https://raw.githubusercontent.com/Lanjelin/astronvim-docker/main/my-AstroNvim.xml
@@ -142,4 +142,10 @@ services:
     command: ttyd zsh
 ```
 
+## Icons
+ttyd will not work without icons without rebuilding it from source.  
 
+To disable icons `nvim /mnt/user/appdata/astronvim/.config/nvim/lua/user/options.lua` and set `icons_enabled` to `false`.  
+
+For a terminal that supports it, [Nerd Fonts](https://www.nerdfonts.com/font-downloads) can be used.  
+For other alternatives, see [AstroNvim Docs](https://docs.astronvim.com/Recipes/icons) on the matter.
