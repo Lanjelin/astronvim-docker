@@ -86,7 +86,7 @@ I've inlcuded a template to make it a fast process setting this up in UnRaid.
 Simply run the following to download the template, then navigate to your Docker-tab, click Add Container, and find AstroNvim in the Template-dropdown.
 
 ```bash
-wget -O /boot/config/plugins/dockerMan/templates-user/my-AstroNvim.xml https://raw.githubusercontent.com/Lanjelin/astronvim-docker/main/my-AstroNvim.xml
+wget -O /boot/config/plugins/dockerMan/templates-user/my-AstroNvim.xml https://raw.githubusercontent.com/Lanjelin/docker-templates/main/lanjelin/astronvim.xml
 ```
 
 ### AstroNvim in the browser
