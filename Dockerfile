@@ -16,7 +16,7 @@ RUN \
     zsh \
     ttyd && \
   apk --no-cache add --update \
-    --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ \
+    --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/ \
     gdu && \
   mkdir -p /edit
 
