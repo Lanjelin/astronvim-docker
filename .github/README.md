@@ -21,7 +21,7 @@ Easiest way to migrate is to start another instance by mounting a different path
 `docker run -it --rm -v /mnt/user/appdata/astronvimv4:/root ghcr.io/lanjelin/astronvim-docker:latest`
 
 If you haven't done any changes to the config, removing the old files then following the first run should suffice.  
-`cd /mnt/user/appdata/ && mv astronvim astronvim.bak`
+`cd /mnt/user/appdata/ && mv astronvim astronvim.bak`  
 `docker run -it --rm -v /mnt/user/appdata/astronvim:/root ghcr.io/lanjelin/astronvim-docker:latest`
 
 ### First Run
