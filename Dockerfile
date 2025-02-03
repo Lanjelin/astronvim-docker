@@ -2,6 +2,11 @@ FROM alpine:3.21.2
 
 RUN \
   apk --no-cache add --update \
+    unzip \
+    wget \
+    curl \
+    gzip \
+    bash \
     cargo \
     yarn \
     python3 \
