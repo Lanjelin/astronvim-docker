@@ -7,6 +7,7 @@ RUN \
     curl \
     gzip \
     bash \
+    npm \
     cargo \
     yarn \
     python3 \
