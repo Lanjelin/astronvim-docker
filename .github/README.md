@@ -1,3 +1,8 @@
+## Replaced by [nvim-docker](https://github.com/lanjelin/nvim-docker)
+AstroNvim-Docker has been replaced by nvim-docker. The new image is a drop-in replacement built on Arch-Linux with better support for LSPs etc.
+
+---
+
 <div align="center" id="madewithlua">
     <img src="https://astronvim.com/logo/astronvim.svg" width="110", height="100">
 </div>
